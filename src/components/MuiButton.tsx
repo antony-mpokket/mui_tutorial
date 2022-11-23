@@ -1,13 +1,29 @@
-import React from 'react'
-import {Button} from '@mui/material'
-import { Typography } from '@mui/material'
-import Stack from '@mui/material/Stack';
-import {Grid} from '@mui/material';
-import {Chip} from '@mui/material';
-import SendIcon from '@mui/icons-material/Send';
-import { Icon, IconButton, ButtonGroup } from '@mui/material';
+import React from "react";
+import { Button } from "@mui/material";
+import { Typography } from "@mui/material";
+import Stack from "@mui/material/Stack";
+import { Grid } from "@mui/material";
+import { Chip } from "@mui/material";
+import SendIcon from "@mui/icons-material/Send";
+import FormatBoldIcon from "@mui/icons-material/FormatBold";
+import FormatItalicIcon from "@mui/icons-material/FormatItalic";
+import FormatUnderlinedIcon from "@mui/icons-material/FormatUnderlined";
+import {
+  Icon,
+  IconButton,
+  ButtonGroup,
+  ToggleButtonGroup,
+  ToggleButton,
+} from "@mui/material";
+
+import { useState } from "react";
 
 export const MuiButton = () => {
+  const [formats, setFormats] = useState<string[]>([])
+  console.log(formats)
+  const handleFormatChange = (_event: React.MouseEvent<HTMLElement>, updatedFormats:string[] ) => {
+    setFormats(updatedFormats)
+  }
   return (
     <div>
       <Typography variant="h3" align="left">
@@ -251,15 +267,42 @@ export const MuiButton = () => {
       </Typography>
       <Stack>
         <Stack direction="row">
-          <ButtonGroup variant="outlined"  orientation='vertical'
-          color='secondary'
+          <ButtonGroup
+            variant="outlined"
+            orientation="vertical"
+            color="secondary"
           >
-            <Button onClick={() => {alert('left click')}}>Left</Button>
+            <Button
+              onClick={() => {
+                alert("left click");
+              }}
+            >
+              Left
+            </Button>
             <Button>Center</Button>
             <Button>Right</Button>
           </ButtonGroup>
         </Stack>
+         <br />     
+        <Stack direction="row" spacing={2}>
+          <ToggleButtonGroup
+            aria-label="text formatting"
+            size="small"
+            value={formats}
+            onChange={handleFormatChange}
+          >
+            <ToggleButton value="bold" aria-label="bold">
+              <FormatBoldIcon />
+            </ToggleButton>
+            <ToggleButton value="italic" aria-label="italic">
+              <FormatItalicIcon />
+            </ToggleButton>
+            <ToggleButton value="underlined" aria-label="underlined">
+              <FormatUnderlinedIcon />
+            </ToggleButton>
+          </ToggleButtonGroup>
+        </Stack>
       </Stack>
     </div>
   );
-}
+};
