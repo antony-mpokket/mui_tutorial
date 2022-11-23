@@ -4,6 +4,7 @@ import { MuiButton } from "./MuiButton";
 import { MuiTypography } from "./MuiTypography";
 import { MuiTextField } from "./MuiTextField";
 import { MuiSelect } from "./MuiSelect";
+import { MuiRadioButton } from "./MuiRadioButton";
 
 const CustomRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const CustomRoutes = () => {
             <Route path="/button" element={<MuiButton />} />
             <Route path="/textfield" element={<MuiTextField />} />
             <Route path="/select" element={<MuiSelect />} />
+            <Route path="/radio-button" element={<MuiRadioButton />} />
         </Routes>
     </Router>
   )
