@@ -3,11 +3,11 @@ import {
   Box,
   FormControl,
   FormLabel,
-  FormControlLabel,
   RadioGroup,
   Radio,
 } from "@mui/material";
 import {useState} from 'react'
+import FormControlLabel from '@mui/material/FormControlLabel'
 
 // The user can select the number of year experience in the industry
 
