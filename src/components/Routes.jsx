@@ -11,11 +11,13 @@ import { MuiTextField } from "./MuiTextField";
 import { MuiSelect } from "./MuiSelect";
 import {MuiRadioButton} from "./MuiRadioButton";
 import MuiCheckbox from "./MuiCheckbox";
+import Home from "./Home";
 
 const CustomRoutes = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/typography" element={<MuiTypography />} />
         <Route path="/button" element={<MuiButton />} />
         <Route path="/textfield" element={<MuiTextField />} />
