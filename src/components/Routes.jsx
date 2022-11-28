@@ -12,6 +12,7 @@ import { MuiSelect } from "./MuiSelect";
 import {MuiRadioButton} from "./MuiRadioButton";
 import MuiCheckbox from "./MuiCheckbox";
 import Home from "./Home";
+import MuiSwitch from "./MuiSwitch";
 
 const CustomRoutes = () => {
   return (
@@ -24,6 +25,7 @@ const CustomRoutes = () => {
         <Route path="/select" element={<MuiSelect />} />
         <Route path="/radio-button" element={<MuiRadioButton />} />
         <Route path="/checkbox" element={<MuiCheckbox />} />
+        <Route path="/switch" element={<MuiSwitch />} />
       </Routes>
     </Router>
   );
