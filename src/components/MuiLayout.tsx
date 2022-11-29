@@ -2,6 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
+import Grid from "@mui/material/Grid";
 
 const MuiLayout = () => {
   return (
@@ -91,11 +92,73 @@ const MuiLayout = () => {
           backgroundColor: "yellowgreen",
         }}
       >
-        <b style={{
-            paddingTop: "50%"
-        }}> I'm A Stack</b>
+        <b
+          style={{
+            paddingTop: "50%",
+          }}
+        >
+          {" "}
+          I'm A Stack
+        </b>
       </Stack>
-      <br /><br />
+      <br />
+      <br />
+      <hr />
+      <Typography variant="h3" align="center">
+        Grid
+      </Typography>
+      <Typography variant="body1" align="left">
+        This componet is 2-d layout components. it's used to create the layout
+      </Typography>{" "}
+      <br />
+      <Grid container my={2}>
+        <Grid item xs={9}>
+          <Box bgcolor="primary.light" p={2}>
+            Item 1
+          </Box>
+        </Grid>
+        <Grid item xs={12}>
+          <Box bgcolor="error.dark" p={2}>
+            Item 2
+          </Box>
+        </Grid>
+        <Grid item xs={6}>
+          <Box bgcolor="success.light" p={2}>
+            Item 3
+          </Box>
+        </Grid>
+        <Grid item xs={3}>
+          <Box bgcolor="warning.light" p={2}>
+            Item 4
+          </Box>
+        </Grid>
+      </Grid>
+      <br />
+      <br />
+      <h6>Let we check the mobile responsive of the grid</h6>
+      <Grid container my={2}>
+        <Grid item sm={6} xs={12}>
+          <Box bgcolor="primary.light" p={2}>
+            Item 1
+          </Box>
+        </Grid>
+        <Grid item sm={6} xs={12}>
+          <Box bgcolor="error.dark" p={2}>
+            Item 2
+          </Box>
+        </Grid>
+        <Grid item sm={6} xs={12}>
+          <Box bgcolor="success.light" p={2}>
+            Item 3
+          </Box>
+        </Grid>
+        <Grid item sm={6} xs={12}>
+          <Box bgcolor="warning.light" p={2}>
+            Item 4
+          </Box>
+        </Grid>
+      </Grid>{" "}
+      <br />
     </div>
   );
 };
