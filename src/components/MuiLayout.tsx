@@ -1,7 +1,7 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { color } from "@mui/system";
+import Stack from "@mui/material/Stack";
 
 const MuiLayout = () => {
   return (
@@ -64,9 +64,38 @@ const MuiLayout = () => {
         Codevolution
       </Box>
       <br />
-      <Box display="flex" height="px" width="100px" bgcolor="success.light" p={15}>
+      <Box
+        display="flex"
+        height="px"
+        width="100px"
+        bgcolor="success.light"
+        p={15}
+      >
         Direct
       </Box>
+      <br />
+      <br /> <hr />
+      <Typography variant="h3" align="center">
+        Stack
+      </Typography>
+      <Typography variant="body1" align="left">
+        This component is used to create the layout in <b>one dimention</b> the
+        vertical or the horizontal
+      </Typography>
+      <Stack
+        sx={{
+          boder: "1px solid",
+          width: "500px",
+          height: "500px",
+          p: 1,
+          backgroundColor: "yellowgreen",
+        }}
+      >
+        <b style={{
+            paddingTop: "50%"
+        }}> I'm A Stack</b>
+      </Stack>
+      <br /><br />
     </div>
   );
 };
