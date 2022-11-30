@@ -17,6 +17,7 @@ import MuiRating from "./MuiRating";
 import MuiIcon from "./MuiIcon";
 import MuiAutocomplete from "./MuiAutocomplete";
 import MuiLayout from "./MuiLayout";
+import MuiCard from "./MuiCard";
 
 const CustomRoutes = () => {
   return (
@@ -34,6 +35,7 @@ const CustomRoutes = () => {
         <Route path="/icon" element={<MuiIcon />} />
         <Route path="/autocomplete" element={<MuiAutocomplete />} />
         <Route path="/layout" element={<MuiLayout />} />
+        <Route path="/card" element={<MuiCard />} />
       </Routes>
     </Router>
   );
