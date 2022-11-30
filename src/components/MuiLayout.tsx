@@ -3,10 +3,11 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
 
 const MuiLayout = () => {
   return (
-    <div>
+    <>
       <Typography
         variant="h3"
         align="center"
@@ -158,8 +159,30 @@ const MuiLayout = () => {
           </Box>
         </Grid>
       </Grid>{" "}
+      <hr />
       <br />
-    </div>
+      <br />
+      <Typography variant="h3" align="center" color="primary">
+        Paper
+      </Typography>
+      <Typography variant="body1" align="left">
+        The Paper component is surface component its used to create the view
+        hierarchy in the UI development and also it's used as a we can do
+        elevation and shadow
+      </Typography>
+      <Paper
+        elevation={24}
+        sx={{
+          padding: "32px",
+          alignContent: "center",
+          width: "100px",
+          height: "100px"
+        }}
+      >
+        This is paper
+      </Paper>
+      
+    </>
   );
 };
 
