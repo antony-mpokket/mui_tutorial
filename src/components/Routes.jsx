@@ -19,6 +19,7 @@ import MuiAutocomplete from "./MuiAutocomplete";
 import MuiLayout from "./MuiLayout";
 import MuiCard from "./MuiCard";
 import MuiAccordion from "./MuiAccordion";
+import MuiImageList from "./MuiImageList";
 
 const CustomRoutes = () => {
   return (
@@ -38,6 +39,7 @@ const CustomRoutes = () => {
         <Route path="/layout" element={<MuiLayout />} />
         <Route path="/card" element={<MuiCard />} />
         <Route path="/accordion" element={<MuiAccordion />} />
+        <Route path="/image-list" element={<MuiImageList />} />
       </Routes>
     </Router>
   );
