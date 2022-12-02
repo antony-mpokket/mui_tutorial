@@ -27,6 +27,8 @@ import MuiSpeedDial from "./MuiSpeedDial";
 import MuiBottomNavigation from "./MuiBottomNavigation";
 import MuiAvatar from "./MuiAvatar";
 import MuiBadge from "./MuiBadge";
+import MuiList from "./MuiList";
+
 
 
 const CustomRoutes = () => {
@@ -55,6 +57,7 @@ const CustomRoutes = () => {
         <Route path="/bottom-navigation" element={<MuiBottomNavigation />} />
         <Route path="/avatar" element={<MuiAvatar />} />
         <Route path="/badge" element={<MuiBadge />} />
+        <Route path="/list" element={<MuiList />} />      
       </Routes>
     </Router>
   );
