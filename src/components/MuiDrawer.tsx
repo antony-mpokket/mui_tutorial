@@ -24,9 +24,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 const MuiDrawer = () => {
   const [isDraweropen, setisDraweropen] = useState(false);
 
-  const handleDrawerToggle = () => {
-    // setisDraweropen(!open);
-  };
   return (
     <>
       <h1>
