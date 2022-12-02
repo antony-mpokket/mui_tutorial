@@ -22,7 +22,7 @@ import MuiAccordion from "./MuiAccordion";
 import MuiImageList from "./MuiImageList";
 import MuiNavBar from "./MuiNavBar";
 import MuiBreadcrumbs from "./MuiBreadcrumbs";
-
+import MuiDrawer from "./MuiDrawer";
 
 const CustomRoutes = () => {
   return (
@@ -45,6 +45,7 @@ const CustomRoutes = () => {
         <Route path="/image-list" element={<MuiImageList />} />
         <Route path="/navbar" element={<MuiNavBar />} />
         <Route path="/breadcrumbs" element={<MuiBreadcrumbs />} />
+        <Route path="/drawer" element={<MuiDrawer />} />
       </Routes>
     </Router>
   );
