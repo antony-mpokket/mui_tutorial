@@ -25,6 +25,7 @@ import MuiBreadcrumbs from "./MuiBreadcrumbs";
 import MuiDrawer from "./MuiDrawer";
 import MuiSpeedDial from "./MuiSpeedDial";
 import MuiBottomNavigation from "./MuiBottomNavigation";
+import MuiAvatar from "./MuiAvatar";
 
 
 const CustomRoutes = () => {
@@ -51,6 +52,7 @@ const CustomRoutes = () => {
         <Route path="/drawer" element={<MuiDrawer />} />
         <Route path="/speed-dial" element={<MuiSpeedDial />} />
         <Route path="/bottom-navigation" element={<MuiBottomNavigation />} />
+        <Route path="/avatar" element={<MuiAvatar />} />
       </Routes>
     </Router>
   );
