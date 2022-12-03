@@ -30,6 +30,7 @@ import MuiBadge from "./MuiBadge";
 import MuiList from "./MuiList";
 import MuiChip from "./MuiChip";
 import MuiTooltip from "./MuiTooltip";
+import MuiTable from "./MuiTable";
 
 
 
@@ -62,6 +63,7 @@ const CustomRoutes = () => {
         <Route path="/list" element={<MuiList />} />      
         <Route path="/chip" element={<MuiChip />} />
         <Route path="/tool-tip" element={<MuiTooltip />} />
+        <Route path="/table" element={<MuiTable />} />
       </Routes>
     </Router>
   );
