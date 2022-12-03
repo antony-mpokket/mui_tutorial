@@ -13,9 +13,7 @@ import { useState } from "react";
 const MuiDialog = () => {
     const [open, setOpen] = useState(false);
     
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
+
   return (
     <>
       <Typography variant="h2">Dialog</Typography>
@@ -26,7 +24,7 @@ const MuiDialog = () => {
       <br />
       <br />
       <hr />
-      <Button>Open Dialog</Button>
+      <Button onClick={() => setOpen(true)}>Open Dialog</Button>
       <Dialog
         open={open}
         onClose={() => setOpen(false)}
