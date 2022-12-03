@@ -34,6 +34,7 @@ import MuiTable from "./MuiTable";
 import MuiAlert from "./MuiAlert";
 import MuiSnackbar from "./MuiSnackbar";
 import MuiDialog from "./MuiDialog";
+import MuiProgress from "./MuiProgress";
 
 
 
@@ -70,6 +71,7 @@ const CustomRoutes = () => {
         <Route path="/alert" element={<MuiAlert />} />
         <Route path="/snackbar" element={<MuiSnackbar />} />
         <Route path="/dialog" element={<MuiDialog />} />
+        <Route path="/progress" element={<MuiProgress />} />
       </Routes>
     </Router>
   );
