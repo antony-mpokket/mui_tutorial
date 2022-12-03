@@ -36,6 +36,7 @@ import MuiSnackbar from "./MuiSnackbar";
 import MuiDialog from "./MuiDialog";
 import MuiProgress from "./MuiProgress";
 import MuiSkeleton from "./MuiSkeleton";
+import MuiLoadingButton from "./MuiLoadingButton";
 
 
 
@@ -74,6 +75,7 @@ const CustomRoutes = () => {
         <Route path="/dialog" element={<MuiDialog />} />
         <Route path="/progress" element={<MuiProgress />} />
         <Route path="/skeleton" element={<MuiSkeleton />} />
+        <Route path="/loading-button" element={<MuiLoadingButton />} />
       </Routes>
     </Router>
   );
