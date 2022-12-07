@@ -42,6 +42,7 @@ import MuiDateRangePicker from "./MuiDateRangePicker";
 import MuiTabs from "./MuiTabs";
 import MuiTimeline from "./MuiTimeline";
 import MuiMasonry from "./MuiMasonry";
+import MuiResponsiveness from "./MuiResponsiveness";
 
 
 
@@ -72,7 +73,7 @@ const CustomRoutes = () => {
         <Route path="/bottom-navigation" element={<MuiBottomNavigation />} />
         <Route path="/avatar" element={<MuiAvatar />} />
         <Route path="/badge" element={<MuiBadge />} />
-        <Route path="/list" element={<MuiList />} />      
+        <Route path="/list" element={<MuiList />} />
         <Route path="/chip" element={<MuiChip />} />
         <Route path="/tool-tip" element={<MuiTooltip />} />
         <Route path="/table" element={<MuiTable />} />
@@ -87,6 +88,7 @@ const CustomRoutes = () => {
         <Route path="/tabs" element={<MuiTabs />} />
         <Route path="/timeline" element={<MuiTimeline />} />
         <Route path="/masonry" element={<MuiMasonry />} />
+        <Route path="/responsiveness" element={<MuiResponsiveness />} />
       </Routes>
     </Router>
   );
