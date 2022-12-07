@@ -38,6 +38,7 @@ import MuiProgress from "./MuiProgress";
 import MuiSkeleton from "./MuiSkeleton";
 import MuiLoadingButton from "./MuiLoadingButton";
 import MuiPicker from "./MuiPicker";
+import MuiDateRangePicker from "./MuiDateRangePicker";
 
 
 
@@ -78,6 +79,7 @@ const CustomRoutes = () => {
         <Route path="/skeleton" element={<MuiSkeleton />} />
         <Route path="/loading-button" element={<MuiLoadingButton />} />
         <Route path="/picker" element={<MuiPicker />} />
+        <Route path="/date-range-picker" element={<MuiDateRangePicker />} />
       </Routes>
     </Router>
   );
