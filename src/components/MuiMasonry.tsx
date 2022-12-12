@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import { styled } from "@mui/material/styles";
 import Paper from "@mui/material/Paper";
 import Masonry from "@mui/lab/Masonry";
+import { bgcolor } from "@mui/system";
 
 
 const heights = [150, 30, 90, 70, 90, 100, 150, 30, 50, 80];
@@ -18,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const MuiMasonry = () => {
   return (
     <>
-      <Box sx={{ width: 500, minHeight: 253 }}>
+      <Box sx={{ width: 500, minHeight: 500, background:'secondary' }}>
         <Masonry columns={4} spacing={2}>
           {heights.map((height, index) => (
             <Item key={index} sx={{ height }}>
