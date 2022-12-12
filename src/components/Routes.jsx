@@ -45,6 +45,9 @@ import MuiMasonry from "./MuiMasonry";
 import MuiResponsiveness from "./MuiResponsiveness";
 
 
+import Accessibility from "./react_main_concepts/Accessibility";
+
+
 
 
 const CustomRoutes = () => {
@@ -89,6 +92,10 @@ const CustomRoutes = () => {
         <Route path="/timeline" element={<MuiTimeline />} />
         <Route path="/masonry" element={<MuiMasonry />} />
         <Route path="/responsiveness" element={<MuiResponsiveness />} />
+
+
+        {/* React Main Concepts */}
+        <Route path="/accessibility" element={<Accessibility />} />
       </Routes>
     </Router>
   );
