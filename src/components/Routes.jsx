@@ -47,8 +47,8 @@ import MuiResponsiveness from "./MuiResponsiveness";
 
 import Accessibility from "./react_main_concepts/Accessibility";
 
-
-
+// amazon is a e-commerce product
+import AmazonRoutes from "./amazon/Routes";
 
 const CustomRoutes = () => {
   return (
@@ -96,6 +96,11 @@ const CustomRoutes = () => {
 
         {/* React Main Concepts */}
         <Route path="/accessibility" element={<Accessibility />} />
+
+
+        {/* Amazon e-commerce project */}
+        <Route path="/amazon/*" element={<AmazonRoutes />} />
+
       </Routes>
     </Router>
   );
