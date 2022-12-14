@@ -21,7 +21,7 @@ const items = [
   },
 ];
 
-function ListItem(item: any) {
+export const ListItem = (item: any) => {
   return (
     <Fragment>
       <dt>{item.term}</dt>
@@ -57,8 +57,7 @@ const Accessibility = () => {
       <Typography variant="h2">React Fragment</Typography> <br />
       <br />
       <dl>
-        {items.map(
-          (item) =>
+        {items.map((item) =>
             // <ListItem item={item} key={item.id} />
             ListItem(item)
           //   ListItem(item)
