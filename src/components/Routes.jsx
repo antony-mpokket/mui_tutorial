@@ -54,7 +54,7 @@ const CustomRoutes = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} /> {/*Change the Home.Tsx --> Home.tsx*/}
         <Route path="/typography" element={<MuiTypography />} />
         <Route path="/button" element={<MuiButton />} />
         <Route path="/textfield" element={<MuiTextField />} />
