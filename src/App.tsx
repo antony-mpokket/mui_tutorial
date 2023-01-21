@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import { createTheme, colors, ThemeProvider } from '@mui/material';
 import CustomRoutes from './components/Routes';
@@ -26,10 +26,12 @@ function App() {
     //   </div>
     // </LocalizationProvider>
     <ThemeProvider theme={theme}>
+      <React.StrictMode>
       <div className="App">
         {/* <MuiTypography /> */}
         <CustomRoutes />
       </div>
+      </React.StrictMode>
     </ThemeProvider>
   );
 }
